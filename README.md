@@ -46,7 +46,7 @@ The built plugin will be available in the `dist/` directory as `ExamplePlugin.js
 ```
 Example-Plugin/
 ├── src/
-│   ├── ExamplePlugin.ts    # Main plugin class
+│   ├── ChatEnhancer.ts    # Main plugin class
 │   └── types.d.ts          # TypeScript type declarations for static resources
 ├── resources/
 │   ├── css/
@@ -157,7 +157,7 @@ The `types.d.ts` file provides TypeScript support for importing static resources
 
 To customize this template for your own plugin:
 
-1. **Rename your plugin**: Update the `pluginName` and `author` properties in `src/ExamplePlugin.ts`
+1. **Rename your plugin**: Update the `pluginName` and `author` properties in `src/ChatEnhancer.ts`
 2. **Update package.json**: 
    - Change the `name` field to match your plugin name (e.g., `"YourPluginName"`)
    - Update the `main` field if you rename the main TypeScript file (e.g., `"src/YourPluginName.ts"`)
