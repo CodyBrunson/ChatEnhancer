@@ -227,7 +227,9 @@ class ChatEnhancer extends Plugin {
 
     start(): void {
         this.log('ChatEnhancer starting...');
-        this.initializePlugin();
+        setTimeout(() => {
+            this.initializePlugin();
+        }, 1000);
     }
 
     stop(): void {
@@ -237,18 +239,6 @@ class ChatEnhancer extends Plugin {
 
     init(): void {
         this.log('ChatEnhancer initialized');
-    }
-
-    SocketManager_loggedIn(): void {
-        this.log('Player logged in - initializing chat enhancer');
-        setTimeout(() => {
-            this.initializePlugin();
-        }, 1000);
-    }
-
-    SocketManager_handleLoggedOut(): void {
-        this.log('Player logged out - cleaning up chat enhancer');
-        this.cleanup();
     }
 
     private initializePlugin(): void {
